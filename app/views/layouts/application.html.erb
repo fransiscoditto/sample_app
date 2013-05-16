@@ -1,16 +1,19 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Sample App | <%=yield(:title) %></title>
+    <title>The Parlente | <%=yield(:title) %></title>
     <%= stylesheet_link_tag    "application", media: "all" %>
     <%= javascript_include_tag "application" %>
     <%= csrf_meta_tags %>
-    <%= render 'layouts/shim' %>    
-  </head>
-  <body>
+    <%= render 'layouts/shim' %> 
+	
+  </head>  
+  <body id=page1>
+  <div class="container">
     <%= render 'layouts/header' %>
-    <div class="container">
-      <%= yield %>
+	<br/><br/>
+      <%= yield %>	      
+	  
 	  <%= render 'layouts/footer' %>
     </div>
   </body>

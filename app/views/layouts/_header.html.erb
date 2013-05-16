@@ -1,12 +1,20 @@
 <header class="navbar navbar-fixed-top navbar-inverse">
+  
   <div class="navbar-inner">
     <div class="container">
-      <%= link_to "sample app", '/', id: "logo" %>
+	  <%= link_to image_tag("hom1.png", :class => "home_icon",id: "logo2", :alt => "Home"), "/" %>
+      <%= link_to "The Parlente", '/', id: "logo" %>
       <nav>
         <ul class="nav pull-right">
-          <li><%= link_to "Home",    '/' %></li>
-          <li><%= link_to "Help",    '/help' %></li>
-          <li><%= link_to "Sign in", '#' %></li>
+		<br/>          
+		  <%= link_to image_tag("fb.png", :class => "facebook_icon", :alt => "Facebook"), "https://www.facebook.com/theparlente", :target => "_blank" %>
+          <%= link_to image_tag("twitter2.png", :class => "twitter_icon", :alt => "Twitter"), "https://twitter.com/the_parlente", :target => "_blank" %>
+		  <%= link_to image_tag("sound.png", :class => "sound_icon", :alt => "Twitter"), "https://soundcloud.com/parlente", :target => "_blank" %>
+		  
+		  
+		
+		  
+<span>
         </ul>
       </nav>
     </div>
